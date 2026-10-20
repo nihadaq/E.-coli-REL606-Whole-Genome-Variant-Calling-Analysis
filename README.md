@@ -1,12 +1,6 @@
 # E.-coli-REL606-Whole-Genome-Variant-Calling-Analysis
 End-to-end E. coli REL606 whole-genome variant calling pipeline integrating Galaxy Europe cloud compute (fastp, BWA-MEM, FreeBayes) with Google Colab for programmatic VCF parsing, quality filtering, and interactive Plotly visualization.
 
-
-1. GitHub README.md
-# *E. coli* REL606 Whole-Genome Variant Calling & Analysis
-
-A hybrid computational genomics pipeline combining **Galaxy Europe** for high-performance cloud alignment and variant calling with **Google Colab** (Python, BioBlend, `cyvcf2`) for programmatic data retrieval, quality filtering, and interactive visualization.
-
 ## 📌 Project Overview
 This project demonstrates an end-to-end Whole Genome Sequencing (WGS) variant discovery workflow. Heavy sequence alignment and bayesian variant calling are executed on Galaxy Europe's cloud infrastructure, while downstream quality control, parsing, and data visualization are handled programmatically in Google Colab using Python.
 
