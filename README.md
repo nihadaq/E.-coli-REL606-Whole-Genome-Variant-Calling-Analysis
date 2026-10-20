@@ -1,2 +1,44 @@
 # E.-coli-REL606-Whole-Genome-Variant-Calling-Analysis
 End-to-end E. coli REL606 whole-genome variant calling pipeline integrating Galaxy Europe cloud compute (fastp, BWA-MEM, FreeBayes) with Google Colab for programmatic VCF parsing, quality filtering, and interactive Plotly visualization.
+
+
+1. GitHub README.md
+# *E. coli* REL606 Whole-Genome Variant Calling & Analysis
+
+A hybrid computational genomics pipeline combining **Galaxy Europe** for high-performance cloud alignment and variant calling with **Google Colab** (Python, BioBlend, `cyvcf2`) for programmatic data retrieval, quality filtering, and interactive visualization.
+
+## 📌 Project Overview
+This project demonstrates an end-to-end Whole Genome Sequencing (WGS) variant discovery workflow. Heavy sequence alignment and bayesian variant calling are executed on Galaxy Europe's cloud infrastructure, while downstream quality control, parsing, and data visualization are handled programmatically in Google Colab using Python.
+
+## 🛠️ Pipeline Architecture
+1. **Data Ingestion**: Paired-end Illumina WGS short reads (`SRR2584866`) fetched directly via NCBI SRA using `fasterq-dump`.
+2. **Read QC & Trimming**: Quality filtering and adapter removal using `fastp`.
+3. **Genome Alignment**: Sequence mapping against the *E. coli* REL606 reference genome (`CP000819.1`) using `BWA-MEM`.
+4. **Variant Calling**: Bayesian germline SNP and Indel discovery using `FreeBayes`.
+5. **Programmatic Downstream Analysis**: Automated VCF download via `BioBlend` API into Google Colab.
+6. **Filtering & Reporting**: Quality score thresholding ($\text{QUAL} \ge 20$) via `cyvcf2`, structured data manipulation in `pandas`, and interactive plot generation with `Plotly`.
+
+## 📊 Key Output Metrics
+- **Organism**: *Escherichia coli* B strain REL606
+- **Reference Accession**: `CP000819.1`
+- **SRA Dataset**: `SRR2584866`
+- **Total High-Quality Variants Processed**: 818[span_0](start_span)[span_0](end_span)
+  - **SNPs**: 701[span_1](start_span)[span_1](end_span)
+  - **INDELs**: 117[span_2](start_span)[span_2](end_span)
+- **Filtering Threshold**: $\text{QUAL} \ge 20$
+- **Output Artifacts**: Filtered variant table (`ecoli_filtered_variants.csv`), interactive Quality (QUAL) and Read Depth (DP) distribution plots.
+
+## 📂 Project Structure
+```text
+├── notebooks/
+│   └── EColi_WGS_Pipeline_Colab.ipynb  # Executed Google Colab Notebook
+├── data/
+│   └── ecoli_filtered_variants.csv     # Filtered high-confidence variant table
+└── README.md                           # Project documentation
+
+🔗 Links & Resources
+ * Public Galaxy Europe History: View Galaxy Workflow Execution
+ * GitHub Repository: E.-coli-REL606-Whole-Genome-Variant-Calling-Analysis
+
+💻 Tech Stack
+Python | BioBlend API | cyvcf2 | pandas | Plotly | Galaxy Europe | BWA-MEM | FreeBayes | fastp
