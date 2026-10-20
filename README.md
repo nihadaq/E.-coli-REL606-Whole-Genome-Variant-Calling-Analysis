@@ -25,7 +25,7 @@ This project demonstrates an end-to-end Whole Genome Sequencing (WGS) variant di
 ## 📂 Project Structure
 ```text
 ├── notebooks/
-│   └── EColi_WGS_Pipeline_Colab.ipynb  # Executed Google Colab Notebook
+│   └── E. coli REL606 Whole-Genome Variant Calling & Analysis.ipynb # Executed Google Colab Notebook
 ├── data/
 │   └── ecoli_filtered_variants.csv     # Filtered high-confidence variant table
 └── README.md                           # Project documentation
