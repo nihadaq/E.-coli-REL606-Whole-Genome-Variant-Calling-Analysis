@@ -22,6 +22,18 @@ This project demonstrates an end-to-end Whole Genome Sequencing (WGS) variant di
 - **Filtering Threshold**: $\text{QUAL} \ge 20$
 - **Output Artifacts**: Filtered variant table (`ecoli_filtered_variants.csv`), interactive Quality (QUAL) and Read Depth (DP) distribution plots.
 
+- ## 📊 Quality Control & Variant Visualizations
+
+<p align="center">
+  <img src="plots/01_variant_type_distribution.png" width="48%" />
+  <img src="plots/02_variant_quality_distribution.png" width="48%" />
+</p>
+
+<p align="center">
+  <img src="plots/03_read_depth_distribution.png" width="48%" />
+  <img src="plots/04_genomic_variant_position_map.png" width="48%" />
+</p>
+
 ## 📂 Project Structure
 ```text
 ├── notebooks/
