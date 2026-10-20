@@ -16,9 +16,9 @@ This project demonstrates an end-to-end Whole Genome Sequencing (WGS) variant di
 - **Organism**: *Escherichia coli* B strain REL606
 - **Reference Accession**: `CP000819.1`
 - **SRA Dataset**: `SRR2584866`
-- **Total High-Quality Variants Processed**: 818[span_0](start_span)[span_0](end_span)
-  - **SNPs**: 701[span_1](start_span)[span_1](end_span)
-  - **INDELs**: 117[span_2](start_span)[span_2](end_span)
+- **Total High-Quality Variants Processed**: 818
+  - **SNPs**: 701
+  - **INDELs**: 117
 - **Filtering Threshold**: $\text{QUAL} \ge 20$
 - **Output Artifacts**: Filtered variant table (`ecoli_filtered_variants.csv`), interactive Quality (QUAL) and Read Depth (DP) distribution plots.
 
