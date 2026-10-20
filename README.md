@@ -10,7 +10,7 @@ This project demonstrates an end-to-end Whole Genome Sequencing (WGS) variant di
 3. **Genome Alignment**: Sequence mapping against the *E. coli* REL606 reference genome (`CP000819.1`) using `BWA-MEM`.
 4. **Variant Calling**: Bayesian germline SNP and Indel discovery using `FreeBayes`.
 5. **Programmatic Downstream Analysis**: Automated VCF download via `BioBlend` API into Google Colab.
-6. **Filtering & Reporting**: Quality score thresholding ($\text{QUAL} \ge 20$) via `cyvcf2`, structured data manipulation in `pandas`, and interactive plot generation with `Plotly`.
+6. **Filtering & Reporting**: Quality score thresholding (QUAL >= 20) via `cyvcf2`, structured data manipulation in `pandas`, and interactive plot generation with `Plotly`.
 
 ## 📊 Key Output Metrics
 - **Organism**: *Escherichia coli* B strain REL606
@@ -31,8 +31,9 @@ This project demonstrates an end-to-end Whole Genome Sequencing (WGS) variant di
 └── README.md                           # Project documentation
 
 🔗 Links & Resources
- * Public Galaxy Europe History: View Galaxy Workflow Execution
- * GitHub Repository: E.-coli-REL606-Whole-Genome-Variant-Calling-Analysis
+ * Public Galaxy Europe History: https://usegalaxy.eu/u/nihadaq/h/e-coli-rel606-whole-genome-variant-calling-analysis
+ * GitHub Repository: https://github.com/nihadaq/E.-coli-REL606-Whole-Genome-Variant-Calling-Analysis
+ * Connect on LinkedIn: https://www.linkedin.com/in/nihadaq?utm_source=share_via&utm_content=profile&utm_medium=member_android
 
 💻 Tech Stack
 Python | BioBlend API | cyvcf2 | pandas | Plotly | Galaxy Europe | BWA-MEM | FreeBayes | fastp
