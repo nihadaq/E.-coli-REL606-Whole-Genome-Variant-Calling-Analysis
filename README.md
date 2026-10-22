@@ -53,18 +53,16 @@ The workflow processes paired-end Illumina WGS reads from *Escherichia coli* str
 📈 Quality Control & Variant Visualizations
 
 <p align="center">
-  <img src="plots/01_variant_type_distribution.png" width="45%" />
-  <img src="plots/02_variant_quality_distribution.png" width="45%" />
+<img src="plots/01_variant_type_distribution.png" width="45%" />
+<img src="plots/02_variant_quality_distribution.png" width="45%" />
 </p>
-
 <p align="center">
-  <img src="plots/03_read_depth_distribution.png" width="45%" />
-  <img src="plots/04_genomic_variant_position_map.png" width="45%" />
+<img src="plots/03_read_depth_distribution.png" width="45%" />
+<img src="plots/04_genomic_variant_position_map.png" width="45%" />
 </p>
-
 <p align="center">
-  <img src="plots/05_snpeff_impact_summary.png" width="45%" />
-  <img src="plots/06_amrfinder_profile.png" width="45%" />
+<img src="plots/05_snpeff_impact_summary.png" width="45%" />
+<img src="plots/06_amrfinder_profile.png" width="45%" />
 </p>
 
 🛠️ Complete 12-Step Pipeline Breakdown
