@@ -8,7 +8,7 @@ An end-to-end, production-ready **Bacterial Isolate WGS Pipeline** following the
 
 The workflow processes paired-end Illumina WGS reads from *Escherichia coli* strain REL606 to identify germline variants, predict functional gene impacts, screen for antimicrobial resistance (AMR), and assign multi-locus sequence types (MLST).
 
-```text
+``
                ┌──────────────────────────────────────────────────┐
                │        RAW ILLUMINA WGS DATA (SRR2584866)        │
                └────────────────────────┬─────────────────────────┘
@@ -50,20 +50,23 @@ The workflow processes paired-end Illumina WGS reads from *Escherichia coli* str
 | Variant Breakdown | 701 SNPs (85.7%) | 117 INDELs (14.3%) | pandas / seaborn |
 | Detected AMR Determinants | rpsL_K43T (Streptomycin), cyaA_S352T (Fosmidomycin), pmrB_E121K (Colistin) | AMRFinderPlus |
 
-📈 Quality Control & Variant Visualizations
+## 📈 Quality Control & Variant Visualizations
 
 <p align="center">
-<img src="plots/01_variant_type_distribution.png" width="45%" />
-<img src="plots/02_variant_quality_distribution.png" width="45%" />
+  <img src="plots/01_variant_type_distribution.png" width="45%" />
+  <img src="plots/02_variant_quality_distribution.png" width="45%" />
 </p>
+
 <p align="center">
-<img src="plots/03_read_depth_distribution.png" width="45%" />
-<img src="plots/04_genomic_variant_position_map.png" width="45%" />
+  <img src="plots/03_read_depth_distribution.png" width="45%" />
+  <img src="plots/04_genomic_variant_position_map.png" width="45%" />
 </p>
+
 <p align="center">
-<img src="plots/05_snpeff_impact_summary.png" width="45%" />
-<img src="plots/06_amrfinder_profile.png" width="45%" />
+  <img src="plots/05_snpeff_impact_summary.png" width="45%" />
+  <img src="plots/06_amrfinder_profile.png" width="45%" />
 </p>
+
 
 🛠️ Complete 12-Step Pipeline Breakdown
  * Read Quality Control (fastp): Evaluated raw base call accuracy (Phred scores) and per-base sequence content.
